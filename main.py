@@ -1,6 +1,5 @@
 import pygame
 from constants import *
-import sys
 
 def main():
     pygame.init()
@@ -15,8 +14,7 @@ def main():
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
+                return
         
         screen.fill((0, 0, 0))
         pygame.display.flip()
